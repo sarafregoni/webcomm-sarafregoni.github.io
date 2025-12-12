@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boomerang Cafè — Corsico</title>
+  <meta name="description" content="Boomerang Cafè - Corsico. Colazioni, aperitivi e musica dal vivo.">
+  <link rel="stylesheet" href="CC.css">
+</head>
+<body>
+  <header class="hero-header">
+    <img src="logo_header.png" class="header-logo" alt="Boomerang Café">
+    <h1 class="slogan">Si torna sempre dove si è stati a ber... Dove si è stati bene!</h1>
+  </header>   
+  <nav class="hamburger-menu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger-icon">
+        ☰
+    </label>
+    <ul class="menu-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#gallerie-riga">Galleria</a></li>
+        <li><a href="#social">Social</a></li>
+    </ul>
+</nav>
+  <main class="container">
+    <section id="hero" class="hero">
+      <h1>Boomerang Cafè</h1>
+      <p class="indirizzo">&#128205 Piazza Papa Giovanni XXIII, 7 — Corsico</p>
+      <p class="telefono">&#128222 Tel: 02 78621973</p>
+      <p class="email">&#128231 Email: boomerangcafecorsico@gmail.com</p>
+    <div class="mappa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5599.05229161263!2d9.107242511318542!3d45.43905263499641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c243b72228dd%3A0x7766940be970e926!2sBoomerang%20Caf%C3%A9!5e0!3m2!1sit!2sit!4v1764840040496!5m2!1sit!2sit" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   </section>
+    <section id="info" class="card">
+      <h2>Info</h2>
+      <p class="muted">Bar e tavola calda per colazioni, aperitivi e serate musicali. &#128338 <strong>Siamo aperti:</strong> da lunedì a venerdì dalle 07:30 all'01:00, il sabato dalle 06:30 alle 02:00 e la domenica dalle 16:00 alle 00:00.
+      <p> &#127881;Devi organizzare una festa o un evento?
+      <br>Offriamo <strong>proposte di menu fissi</strong> per <em>aperitivi, compleanni, feste di laurea ed eventi privati</em>.</p>
+      <p>&#128073<a href="eventi.html" class="link-eventi">Scopri le nostre proposte dedicate</a>
+    </p>
+    </section>
+    <section id="menu" class="card">
+      <h2>Menu</h2>
+      <div class="menu-online-link">
+       <p>&#128203 Vuoi vedere il menu digitale completo? </p> 
+      <a href="http://79.8.80.29:7610/nwac/menu?roomId=2&tableId=2&tableOid=3" target="_blank"> Clicca qui per aprire il nostro menù aggiornato</a>
+      </div>
+    </section>
+    <section id="contatti" class="card">
+      <h2>Contatti / Prenotazioni</h2>
+      <form id="contactForm">
+        <label>Nome<input type="text" id="name" required></label>
+        <label>Telefono o email<input type="text" id="contactInfo" required></label>
+        <label>Messaggio<textarea id="msg"></textarea></label>
+        <button type="submit">Invia</button>
+        <p id="formMsg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <section id="gallerie-riga">
+    <div class="slider-box">
+        <h2>Le serate da noi &#127926&#127776</h2>
+        <button id="prev-serate" class="prev">❮</button>
+        <img id="slide-serate" src="foto_serate/IMG_3046.jpg" alt="serate">
+        <button id="next-serate" class="next">❯</button>
+    </div>
+    <div class="slider-box">
+        <h2>Il nostro menu&#127860&#129346</h2>
+        <button id="prev-menu" class="prev">❮</button>
+        <img id="slide-menu" src="foto_menu/IMG_3248.jpg" alt="menu">
+        <button id="next-menu" class="next">❯</button>
+    </div>
+</section>
+<section id="social">
+  <img id="slide-serate" src="Logo nuovo.png" width="100px" height="100px">
+  <h2>&#128242Seguici sui social</h2>
+  <p>Rimani aggiornato su eventi, promozioni e novità del Boomerang Cafè!</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/boomerangcafe_cc/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+    </a>
+    <a href="https://www.facebook.com/cafeboomerangcorsico/?locale=it_IT" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" class="social-icon">
+    </a>
+  </div>
+</section>
+  <footer class="site-footer">
+    <div class="container">
+      <small>©Boomerang Cafè SNC di Massimiliano Sanità, Corsico 20094</small>
+    </div>
+  </footer>
+  <script src="CC.js"></script>
+</body>
+</html>
